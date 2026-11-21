@@ -1,0 +1,173 @@
+{
+  "configs": {
+    "yesterday": {
+      "kind": "baseline",
+      "lag": "lag_24"
+    },
+    "last_week": {
+      "kind": "baseline",
+      "lag": "lag_168"
+    },
+    "ridge_1": {
+      "kind": "ridge",
+      "alpha": 1.0
+    },
+    "ridge_100": {
+      "kind": "ridge",
+      "alpha": 100.0
+    },
+    "boost_15": {
+      "kind": "boost",
+      "leaves": 15
+    },
+    "boost_31": {
+      "kind": "boost",
+      "leaves": 31
+    }
+  },
+  "folds": [
+    {
+      "model": "yesterday",
+      "training_stop_exclusive": "2012-07-01T00:00:00",
+      "validation_stop_exclusive": "2012-08-01T00:00:00",
+      "training_n": 12679,
+      "n": 744,
+      "mae": 86.42338709677419,
+      "rmse": 139.80758186248897,
+      "wape": 0.3157995550251219,
+      "bias": -2.0551075268817205
+    },
+    {
+      "model": "last_week",
+      "training_stop_exclusive": "2012-07-01T00:00:00",
+      "validation_stop_exclusive": "2012-08-01T00:00:00",
+      "training_n": 12679,
+      "n": 744,
+      "mae": 64.20564516129032,
+      "rmse": 101.88504881503964,
+      "wape": 0.23461374117785735,
+      "bias": -4.119623655913978
+    },
+    {
+      "model": "ridge_1",
+      "training_stop_exclusive": "2012-07-01T00:00:00",
+      "validation_stop_exclusive": "2012-08-01T00:00:00",
+      "training_n": 12679,
+      "n": 744,
+      "mae": 56.087793367344986,
+      "rmse": 84.22439473274642,
+      "wape": 0.2049503124416384,
+      "bias": 0.038200671687448715
+    },
+    {
+      "model": "ridge_100",
+      "training_stop_exclusive": "2012-07-01T00:00:00",
+      "validation_stop_exclusive": "2012-08-01T00:00:00",
+      "training_n": 12679,
+      "n": 744,
+      "mae": 56.27075026328072,
+      "rmse": 84.38049739240363,
+      "wape": 0.20561885493072857,
+      "bias": -0.5132254682016687
+    },
+    {
+      "model": "boost_15",
+      "training_stop_exclusive": "2012-07-01T00:00:00",
+      "validation_stop_exclusive": "2012-08-01T00:00:00",
+      "training_n": 12679,
+      "n": 744,
+      "mae": 61.53798885654394,
+      "rmse": 91.23974878690497,
+      "wape": 0.22486586271232664,
+      "bias": -30.149838467115195
+    },
+    {
+      "model": "boost_31",
+      "training_stop_exclusive": "2012-07-01T00:00:00",
+      "validation_stop_exclusive": "2012-08-01T00:00:00",
+      "training_n": 12679,
+      "n": 744,
+      "mae": 59.85989172351632,
+      "rmse": 89.3991758371349,
+      "wape": 0.21873393077004297,
+      "bias": -31.267266512785504
+    },
+    {
+      "model": "yesterday",
+      "training_stop_exclusive": "2012-08-01T00:00:00",
+      "validation_stop_exclusive": "2012-09-01T00:00:00",
+      "training_n": 13423,
+      "n": 744,
+      "mae": 74.83064516129032,
+      "rmse": 129.1777137142089,
+      "wape": 0.25954881749905595,
+      "bias": -0.18010752688172044
+    },
+    {
+      "model": "last_week",
+      "training_stop_exclusive": "2012-08-01T00:00:00",
+      "validation_stop_exclusive": "2012-09-01T00:00:00",
+      "training_n": 13423,
+      "n": 744,
+      "mae": 42.22043010752688,
+      "rmse": 77.21527649844415,
+      "wape": 0.14644084231922164,
+      "bias": 2.0376344086021505
+    },
+    {
+      "model": "ridge_1",
+      "training_stop_exclusive": "2012-08-01T00:00:00",
+      "validation_stop_exclusive": "2012-09-01T00:00:00",
+      "training_n": 13423,
+      "n": 744,
+      "mae": 41.139067942371,
+      "rmse": 68.82063786582336,
+      "wape": 0.14269015607764937,
+      "bias": -3.7250812997916825
+    },
+    {
+      "model": "ridge_100",
+      "training_stop_exclusive": "2012-08-01T00:00:00",
+      "validation_stop_exclusive": "2012-09-01T00:00:00",
+      "training_n": 13423,
+      "n": 744,
+      "mae": 41.441973422320636,
+      "rmse": 68.9802239122858,
+      "wape": 0.14374077857282438,
+      "bias": -3.72428022504097
+    },
+    {
+      "model": "boost_15",
+      "training_stop_exclusive": "2012-08-01T00:00:00",
+      "validation_stop_exclusive": "2012-09-01T00:00:00",
+      "training_n": 13423,
+      "n": 744,
+      "mae": 39.573610543045746,
+      "rmse": 69.15542679069922,
+      "wape": 0.13726039376617594,
+      "bias": 2.5311359676352185
+    },
+    {
+      "model": "boost_31",
+      "training_stop_exclusive": "2012-08-01T00:00:00",
+      "validation_stop_exclusive": "2012-09-01T00:00:00",
+      "training_n": 13423,
+      "n": 744,
+      "mae": 37.53703768683674,
+      "rmse": 66.41443018843094,
+      "wape": 0.13019657552111877,
+      "bias": 1.799046604598105
+    }
+  ],
+  "mean_fold_mae": {
+    "yesterday": 80.62701612903226,
+    "last_week": 53.2130376344086,
+    "ridge_1": 48.61343065485799,
+    "ridge_100": 48.85636184280068,
+    "boost_15": 50.555799699794846,
+    "boost_31": 48.698464705176534
+  },
+  "selected": "ridge_1",
+  "best_learned": "ridge_1",
+  "criterion": "Unweighted mean of July and August MAE; alphabetical tie break."
+}

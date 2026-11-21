@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.deps/
+data/raw/
+reports/local/
+.mpl-cache/
+build/
+dist/
+*.egg-info/
+
+.wheel-check/
