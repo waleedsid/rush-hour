@@ -36,7 +36,7 @@ Connect forecasting to an explicitly hypothetical asymmetric under/overforecast 
 
 ## Milestone status
 
-November 21: complete study executed with 2,000 daily bootstrap resamples. All 19 tests pass. Six figure pairs were rendered and inspected. Ridge alpha 1 was selected; final MAE is 59.4558 rentals per hour. Code, documentation and a CI definition are ready locally. Publication and hosted CI remain blocked by repository creation access.
+November 21: complete study executed with 2,000 daily bootstrap resamples. All 19 tests pass. Six figure pairs were rendered and inspected. Ridge alpha 1 was selected; final MAE is 59.4558 rentals per hour. Code, documentation, all figures and the full result table are published at https://github.com/waleedsid/rush-hour. Automated reproduction runs on Python 3.11 and 3.12; see the repository Actions page for current check results.
 
 ## Data observations established November 20, 2026
 
@@ -57,5 +57,3 @@ The CLI downloads and verifies the archive if needed, then writes reports/data-a
 
 
 Before fitting on November 21: fixed configurations are yesterday, last week, Ridge alpha 1/100, and absolute-error histogram boosting with 15/31 leaves, learning rate 0.05, 200 iterations, minimum 20 samples per leaf, L2=1, and no random early stopping. Baselines fall back to the other lag, previous day mean, previous week mean, then training median. Calendar ablation uses the best learned configuration without a second search. Intervals use September signed error 5th/95th percentiles. Cost sensitivity uses under/over ratios 1, 2, 4, 8 with offsets learned only in September.
-
-
